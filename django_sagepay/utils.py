@@ -77,7 +77,7 @@ def utf8_truncate(s, max_length):
     return encoded[:max_length].decode('utf-8', 'ignore')
 
 def format_money_value(num):
-    return u'{:.2f}'.format(num)
+    return u'{0:.2f}'.format(num)
 
 def encode_basket(basket):
     fields = []
