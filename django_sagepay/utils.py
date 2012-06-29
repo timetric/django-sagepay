@@ -54,7 +54,7 @@ def truncate_overlong_fields(data):
     # not a required fields and users should already be clear what they're
     # buying at this stage.
     basket = data.pop('Basket', None)
-    if basket and bakset == utf8_truncate(basket, BASKET_FIELD_LENGTH):
+    if basket and basket == utf8_truncate(basket, BASKET_FIELD_LENGTH):
         data['Basket'] = basket
     # Truncate fields
     for field, length in FIELD_LENGTHS:
